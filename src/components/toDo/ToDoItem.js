@@ -7,10 +7,11 @@ const ItemContainer = styled.div`
   min-width: 30rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 1.6rem 0;
   background-color: #3498db;
   color: #ecf0f1;
-  padding: 1rem 0.5rem;
+  height: 3rem;
 `
 const DeleteButton = styled.button`
   background-color: #e74c3c;
@@ -18,6 +19,7 @@ const DeleteButton = styled.button`
   border: none;
   outline: none;
   width: 5rem;
+  height: 100%
   
 `
 class ToDoItem extends Component {

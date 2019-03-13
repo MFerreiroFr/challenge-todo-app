@@ -10,5 +10,7 @@
 
  - Press the green button at the bottom right to show the Add task form
  - A title is required for the task
-
+ - Press the Add task button when done.
+ - You can press the green button again to hide the Add task form
+ - Press the delete button to delete a task
  
