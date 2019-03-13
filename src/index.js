@@ -1,12 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import reduxThunk from 'redux-thunk';
+import {createGlobalStyle} from 'styled-components';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import App from './components/App';
+import reducers from './reducers';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const GlobalStyle = createGlobalStyle`
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+}
+`
+const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
+
+ReactDOM.render(<Provider store={store}><GlobalStyle /><App /></Provider>,
+  document.querySelector('#root'));

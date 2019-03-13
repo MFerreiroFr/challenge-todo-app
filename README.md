@@ -3,53 +3,25 @@
 # React Todo-list challenge
 ## < Frontend Test >
 
-## What is this about:
+## Description:
 ----
- The purpose of this test is to know your ability to create a small functional single page application in a limit of time. Below you’ll find the features, the requirements and the key points you should keep on mind while developing.
+ To-do list for the ironhack technical challenge
 
-## What we’ll evaluate
-----
-- The final product.
-- The use of ES6 features is allowed and encouraged.
-- The use of CSS processors (Sass, LESS...) is allowed and encouraged.
-- The following are a bonus points for the candidate:
-  - ✓ Code quality
-  - ✓ Mobile support
-  - ✓ Application structure
-  - ✓ User Interface
-  - ✓ Planning session ( README, Kanban etc.. )
 
-## What we want you to do
----
-We want you to start simple and focus on a working product. At the same time this challenge has no limitations and we encourage you to be creative in terms of functionality and style (includes frontend and backend).
-
----
-### Example User stories
-- **Create todo** As a user I want to create a new todo/task with `title` and `body` and save it in the database.
+### User stories
 - **List todos** As a user I want to see all my todos in a list.
+- **Create todo** As a user I want to create a new todo/task with `title` and `body` and save it in the database.
 - **Delete todo** As a user I want to delete a todo from the list when I don't want it anymore.
 
 ### Backlog
 - **Update todo** A a user I want to be able to modify an existing todo.
 - **Done** As a user I want to mark my todo as done.
+- **Add some tag system** As a user I want to be able to classify my tasks using some kind of indicator, like color
 - **Move todos** As a user I want to rearrange my todos.
-- etc...
 
-## Provided material
----
+### Kanban
 
-- Fork and clone this repository.
-- Run the following commands:
-```
-cd challenge-todo-app
-npm start
-```
-
-- Fork and clone [the server](https://github.com/ironhackbcn/challenge-todo-api) repository
-
-You will get intstuctions about installation and how to access the Todo REST api there.
-
----
+[Kanban board](https://drive.google.com/file/d/17N5VRfl4rWmmVTncsrUFLeqKZaHrOiNx/view?usp=sharing)
 
 ## Delivery requirements
 ---
